@@ -12,11 +12,8 @@ $this->title = 'Yii2 ready template';
                     <div class="content-box">
                         <div class="content">
                             <div class="inner">
-                                <div class="sub-title">The best Agriculture products</div>
-                                <h1>Welcome to<br> agriculture Form</h1>
-                                <div class="link-box">
-                                    <a href="about.html" class="thm-btn">Discover More</a>
-                                </div>
+                                <div class="sub-title">Eng yaxshi qishloq xo'jaligi mahsuloti</div>
+                                <h1>"Agroman" loyihasiga <br> xush kelibsiz</h1>
                             </div>
                         </div>
                     </div>
@@ -30,11 +27,8 @@ $this->title = 'Yii2 ready template';
                     <div class="content-box">
                         <div class="content">
                             <div class="inner">
-                                <div class="sub-title">The best Agriculture products</div>
-                                <h1>Welcome to<br> agriculture Form</h1>
-                                <div class="link-box">
-                                    <a href="about.html" class="thm-btn">Discover More</a>
-                                </div>
+                                <div class="sub-title">Eng yaxshi qishloq xo'jaligi mahsuloti</div>
+                                <h1>"Agroman" loyihasiga <br> xush kelibsiz</h1>
                             </div>
                         </div>
                     </div>
@@ -48,11 +42,8 @@ $this->title = 'Yii2 ready template';
                     <div class="content-box">
                         <div class="content">
                             <div class="inner">
-                                <div class="sub-title">The best Agriculture products</div>
-                                <h1>Welcome to<br> agriculture Form</h1>
-                                <div class="link-box">
-                                    <a href="about.html" class="thm-btn">Discover More</a>
-                                </div>
+                                <div class="sub-title">Eng yaxshi qishloq xo'jaligi mahsuloti</div>
+                                <h1>"Agroman" loyihasiga <br> xush kelibsiz</h1>
                             </div>
                         </div>
                     </div>
@@ -79,38 +70,32 @@ $this->title = 'Yii2 ready template';
                 </div>
                 <div class="col-xl-6 col-lg-6">
                     <div class="block-title text-left">
-                        <p>About agriculture</p>
-                        <h3>We’re leader in agriculture market</h3>
+                        <p>Loyihamiz haqida</p>
+                        <h3>Bu biz uchun juda muhim</h3>
                         <div class="leaf">
                             <img src="images/resources/leaf.png" alt="">
                         </div>
                     </div>
                     <div class="about_content">
                         <div class="text">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which
-                                don't look even slightly believable.</p>
+                            <p>Biz qishloq xo'jaligidagi yerlarning tuproqlari miqdorini o'rganib hosil samaradorligini bir necha barobarga oshirishni reja qilganmiz</p>
                         </div>
                         <div class="about1_icon_wrap">
                             <div class="about1_icon_single">
                                 <div class="about1_icon">
                                     <span class="icon-harvest"></span>
                                 </div>
-                                <p>Growing Fruits and Vegetables</p>
+                                <p>Tuproq samaradorligini oshirishga etibor qarating</p>
                             </div>
                             <div class="about1_icon_single">
                                 <div class="about1_icon">
                                     <span class="icon-temperature"></span>
                                 </div>
-                                <p>Tips for Ripening your Fruits</p>
+                                <p>Iqlim o'zgarishiga e'tibor qarating</p>
                             </div>
                         </div>
                         <div class="bottom_text">
-                            <p> If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                                anything embarrassing hidden in the middle of text.</p>
-                        </div>
-                        <div class="about1__button-block">
-                            <a href="about.html" class="thm-btn about_one__btn">Learn More</a>
+                            <p> Qishloq xo‘jaligi yerlaridan foydalanuvchilar tomonidan tuproq unumdorligini oshirish, ayniqsa organik o‘g‘itlardan keng foydalanish bo‘yicha kompleks tadbirlarni yetarli darajada amalga oshirilmaganligi natijasida, so‘nggi 30 yilda sug‘oriladigan tuproqlarda gumus miqdori 10-15 foizga kamayib ketgan, oqibatda ekvivalent hisobida boy berilgan sug‘oriladigan ekin yerlari 450 ming gektarni tashkil qiladi.</p>
                         </div>
                     </div>
                 </div>
@@ -120,69 +105,29 @@ $this->title = 'Yii2 ready template';
     <section class="service_one">
         <div class="container">
             <div class="block-title text-center">
-                <p>What we do</p>
-                <h3>Services We Offer</h3>
+                <p>Bizga nima foyda</p>
+                <h3>Eng sara foydali malumotlar</h3>
                 <div class="leaf">
                     <img src="images/resources/leaf.png" alt="">
                 </div>
             </div>
             <div class="row">
+                <?php foreach ($useful as $item): ?>
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="service_1_single wow fadeInUp">
                         <div class="content">
-                            <h3>Fresh<br>vegetables</h3>
-                            <p>Lorem ipsum is simply are many variations of pass of majority.</p>
+                            <h3><?= $item->getText1() ?></h3>
+                            <p><?= $item->getText2() ?></p>
                         </div>
                         <div class="service_1_img">
-                            <img src="images/service/service-1-img-1.jpg" alt="Service Image">
+                            <img src="<?= $item->getPhoto1('270', '175', 'zoomCrop', 'transparent', 'center', 'center'); ?>" alt="Service Image">
                             <div class="hover_box">
                                 <a href="service-detail.html"><span class="icon-left-arrow"></span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="service_1_single wow fadeInUp" data-wow-delay="300ms">
-                        <div class="content">
-                            <h3>Fresh<br>vegetables</h3>
-                            <p>Lorem ipsum is simply are many variations of pass of majority.</p>
-                        </div>
-                        <div class="service_1_img">
-                            <img src="images/service/service-1-img-2.jpg" alt="Service Image">
-                            <div class="hover_box">
-                                <a href="service-detail.html"><span class="icon-left-arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="service_1_single wow fadeInUp" data-wow-delay="600ms">
-                        <div class="content">
-                            <h3>Fresh<br>vegetables</h3>
-                            <p>Lorem ipsum is simply are many variations of pass of majority.</p>
-                        </div>
-                        <div class="service_1_img">
-                            <img src="images/service/service-1-img-3.jpg" alt="Service Image">
-                            <div class="hover_box">
-                                <a href="service-detail.html"><span class="icon-left-arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="service_1_single wow fadeInUp" data-wow-delay="900ms">
-                        <div class="content">
-                            <h3>Fresh<br>vegetables</h3>
-                            <p>Lorem ipsum is simply are many variations of pass of majority.</p>
-                        </div>
-                        <div class="service_1_img">
-                            <img src="images/service/service-1-img-4.jpg" alt="Service Image">
-                            <div class="hover_box">
-                                <a href="service-detail.html"><span class="icon-left-arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -207,14 +152,12 @@ $this->title = 'Yii2 ready template';
             <div class="row">
                 <div class="col-xl-6 wow slideInLeft" data-wow-delay="100ms">
                     <div class="single_featured_box">
-                        <img src="images/resources/featured-leaf.png" alt=""><span>We Sale Best Agriculture
-                                Products</span><img src="images/resources/featured-leaf.png" alt="">
+                        <img src="images/resources/featured-leaf.png" alt=""><span>Yerlarning  o'g'itlari yetishmaydi</span><img src="images/resources/featured-leaf.png" alt="">
                     </div>
                 </div>
                 <div class="col-xl-6 wow slideInRight" data-wow-delay="100ms">
                     <div class="single_featured_box">
-                        <img src="images/resources/featured-leaf.png" alt=""><span>We’ve 40 years experience
-                                in field</span><img src="images/resources/featured-leaf.png" alt="">
+                        <img src="images/resources/featured-leaf.png" alt=""><span>Yerlarga mehr bering</span><img src="images/resources/featured-leaf.png" alt="">
                     </div>
                 </div>
             </div>
@@ -223,387 +166,9 @@ $this->title = 'Yii2 ready template';
 
     <section class="video-one" style="background-image:url(images/resources/video-bg-1.jpg);">
         <div class="container text-center">
-            <a href="https://www.youtube.com/watch?v=i9E_Blai8vk" class="video-one__btn video-popup"><i
+            <a href="https://www.youtube.com/watch?v=DgS61JCdvr8" class="video-one__btn video-popup"><i
                         class="fa fa-play"></i></a>
-            <p>Modern agriculture types</p>
-            <h3>Agriculture matters to the<br>future of development</h3>
-        </div>
-    </section>
-
-    <section class="testimonials-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="testimonials_one_left">
-                        <div class="block-title text-left">
-                            <p>testimonails</p>
-                            <h3>What our customers are<br>talking about</h3>
-                            <div class="leaf">
-                                <img src="images/resources/leaf.png" alt="">
-                            </div>
-                        </div>
-                        <div class="testimonials_one_text">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which
-                                don't look even slightly believable.</p>
-                        </div>
-                        <div class="project_counted wow fadeInUp" data-wow-delay="300ms">
-                            <div class="icon_box">
-                                <span class="icon-farmer"></span>
-                            </div>
-                            <div class="project-content">
-                                <h3 class="counter">4,850000</h3>
-                                <p>Agriculture projects are completed</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="testimonials_one_content">
-                        <div class="testimonials_one_carousel owl-theme owl-carousel">
-                            <div class="testimonials_one_single_item">
-                                <div class="text">
-                                    <p>This is due to their excellent service, and augue homero consectetuer in nam.
-                                        Eu quo laoreet propriae, malis exerci habemus has vocent persius eum ea.</p>
-                                </div>
-                                <div class="client_thumbnail">
-                                    <div class="client_img">
-                                        <img src="images/testimonials/testimonial-1-img-1.png"
-                                             alt="testimonial1-img">
-                                    </div>
-                                    <div class="client_title">
-                                        <h4>Kevin Hardson</h4>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonials_one_single_item">
-                                <div class="text">
-                                    <p>This is due to their excellent service, and augue homero consectetuer in nam.
-                                        Eu quo laoreet propriae, malis exerci habemus has vocent persius eum ea.</p>
-                                </div>
-                                <div class="client_thumbnail">
-                                    <div class="client_img">
-                                        <img src="images/testimonials/testimonial-1-img-1.png"
-                                             alt="testimonial1-img">
-                                    </div>
-                                    <div class="client_title">
-                                        <h4>Kevin Hardson</h4>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonials_one_single_item">
-                                <div class="text">
-                                    <p>This is due to their excellent service, and augue homero consectetuer in nam.
-                                        Eu quo laoreet propriae, malis exerci habemus has vocent persius eum ea.</p>
-                                </div>
-                                <div class="client_thumbnail">
-                                    <div class="client_img">
-                                        <img src="images/testimonials/testimonial-1-img-1.png"
-                                             alt="testimonial1-img">
-                                    </div>
-                                    <div class="client_title">
-                                        <h4>Kevin Hardson</h4>
-                                        <p>Customer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="recent-project">
-        <div class="container">
-            <div class="block-title text-center">
-                <p>explore projects</p>
-                <h3>our Recent projects</h3>
-                <div class="leaf">
-                    <img src="images/resources/leaf.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4">
-                    <div class="recent_project_single wow fadeInUp" data-wow-delay="300ms">
-                        <div class="project_img_box">
-                            <img src="images/project/recent-pro-img-1.jpg" alt="Recent Project Img">
-                            <div class="project_content">
-                                <h3>organic<br>solutions</h3>
-                            </div>
-                            <div class="hover_box">
-                                <a href="projects_detail.html"><span class="icon-left-arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="recent_project_single wow fadeInUp" data-wow-delay="600ms">
-                        <div class="project_img_box">
-                            <img src="images/project/recent-pro-img-2.jpg" alt="Recent Project Img">
-                            <div class="project_content">
-                                <h3>Harvest<br>Innovations</h3>
-                            </div>
-                            <div class="hover_box">
-                                <a href="projects_detail.html"><span class="icon-left-arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="900ms">
-                    <div class="recent_project_single">
-                        <div class="project_img_box">
-                            <img src="images/project/recent-pro-img-3.jpg" alt="Recent Project Img">
-                            <div class="project_content">
-                                <h3>Agriculture<br>farming</h3>
-                            </div>
-                            <div class="hover_box">
-                                <a href="projects_detail.html"><span class="icon-left-arrow"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="benefits">
-        <div class="benefits_bg" style="background-image: url(images/resources/benifits_bg.png)"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="block-title text-left">
-                        <p>Our benefits</p>
-                        <h3>Agriculture & Eco<br>Farming</h3>
-                        <div class="leaf">
-                            <img src="images/resources/leaf.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8 d-flex">
-                    <div class="my-auto">
-                        <div class="benefits_text">
-                            <p>There are many variations of passages of available but the majority have suffered
-                                alteration in some form, by injected humou or randomised words which don't look even
-                                slightly believable. There are many variations of passages of available but the
-                                majority have suffered alteration in some form, by injected humou or randomised
-                                words which don't look even slightly believable.</p>
-                        </div>
-                    </div><!-- /.my-auto -->
-                </div>
-            </div>
-            <div class="benefits_bottom_part">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="benefits_single wow fadeInUp" data-wow-delay="300ms">
-                            <div class="icon-box">
-                                <span class="icon-tractor"></span>
-                            </div>
-                            <h3>We Use New technology</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="benefits_single wow fadeInUp" data-wow-delay="600ms">
-                            <div class="icon-box">
-                                <span class="icon-cart"></span>
-                            </div>
-                            <h3>professional farmers</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="benefits_single wow fadeInUp" data-wow-delay="900ms">
-                            <div class="icon-box">
-                                <span class="icon-watering-can"></span>
-                            </div>
-                            <h3>We’re certified company</h3>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="benefits_single wow fadeInUp" data-wow-delay="1200ms">
-                            <div class="icon-box">
-                                <span class="icon-log"></span>
-                            </div>
-                            <h3>We deliver everywhere</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="product-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="product_img">
-                        <img src="images/resources/product-1-img-1.jpg" alt="Product One Img">
-                        <div class="experience_box">
-                            <h2>40 Year</h2>
-                            <p>Of Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="growing_product">
-                        <div class="block-title text-left">
-                            <p>fresh products</p>
-                            <h3>Growing products</h3>
-                            <div class="leaf">
-                                <img src="images/resources/leaf.png" alt="">
-                            </div>
-                        </div>
-                        <div class="growing_product_text">
-                            <p>Lorem ipsum dolor sit amet nsectetur cing elit. Suspe ndisse suscipit sagittis leo
-                                sit met entum estibu dignissim posuere cubilia durae. Leo sit met entum cubilia crae
-                                onec.</p>
-                        </div>
-                        <div class="progress-levels">
-                            <!--Skill Box-->
-                            <div class="progress-box">
-                                <div class="inner count-box">
-                                    <div class="text">Agriculture</div>
-                                    <div class="bar">
-                                        <div class="bar-innner">
-                                            <div class="skill-percent">
-                                                <span class="count-text" data-speed="3000" data-stop="68">0</span>
-                                                <span class="percent">%</span>
-                                            </div>
-                                            <div class="bar-fill" data-percent="68"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Skill Box-->
-                            <div class="progress-box">
-                                <div class="inner count-box">
-                                    <div class="text">Organic</div>
-                                    <div class="bar">
-                                        <div class="bar-innner">
-                                            <div class="skill-percent">
-                                                <span class="count-text" data-speed="3000" data-stop="98">0</span>
-                                                <span class="percent">%</span>
-                                            </div>
-                                            <div class="bar-fill" data-percent="98"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="blog-one">
-        <div class="container">
-            <div class="block-title text-center">
-                <p>from the blog</p>
-                <h3>News & Articles</h3>
-                <div class="leaf">
-                    <img src="images/resources/leaf.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4">
-                    <div class="blog_one_single wow fadeInUp" data-wow-delay="300ms">
-                        <div class="blog_one_image">
-                            <div class="blog_image">
-                                <img src="images/blog/blog-1-img-1.jpg" alt="Blog One Image">
-                                <div class="blog_one_date_box">
-                                    <p>30 Oct, 2019</p>
-                                </div>
-                            </div>
-                            <div class="blog-one__content">
-                                <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="news_detail.html"><i class="far fa-user-circle"></i> Admin</a></li>
-                                    <li><a href="news_detail.html"><i class="far fa-comments"></i> 2 Comments</a>
-                                    </li>
-                                </ul>
-                                <h3><a href="news_detail.html">Agriculture Miracle you<br>Don't Know About</a></h3>
-                                <div class="blog_one_text">
-                                    <p>There are lorem ipsum is simply free many variations of ipsum the majority
-                                        suffered.</p>
-                                </div>
-                                <div class="read_more_btn">
-                                    <a href="#"><i class="fa fa-angle-right"></i>Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="blog_one_single wow fadeInUp" data-wow-delay="600ms">
-                        <div class="blog_one_image">
-                            <div class="blog_image">
-                                <img src="images/blog/blog-1-img-2.jpg" alt="Blog One Image">
-                                <div class="blog_one_date_box">
-                                    <p>30 Oct, 2019</p>
-                                </div>
-                            </div>
-                            <div class="blog-one__content">
-                                <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="news_detail.html"><i class="far fa-user-circle"></i> Admin</a></li>
-                                    <li><a href="news_detail.html"><i class="far fa-comments"></i> 2 Comments</a>
-                                    </li>
-                                </ul>
-                                <h3><a href="news_detail.html">Amount of Freak Bread<br>or Other Fruits</a></h3>
-                                <div class="blog_one_text">
-                                    <p>There are lorem ipsum is simply free many variations of ipsum the majority
-                                        suffered.</p>
-                                </div>
-                                <div class="read_more_btn">
-                                    <a href="#"><i class="fa fa-angle-right"></i>Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4">
-                    <div class="blog_one_single wow fadeInUp" data-wow-delay="900ms">
-                        <div class="blog_one_image">
-                            <div class="blog_image">
-                                <img src="images/blog/blog-1-img-3.jpg" alt="Blog One Image">
-                                <div class="blog_one_date_box">
-                                    <p>30 Oct, 2019</p>
-                                </div>
-                            </div>
-                            <div class="blog-one__content">
-                                <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="news_detail.html"><i class="far fa-user-circle"></i> Admin</a></li>
-                                    <li><a href="news_detail.html"><i class="far fa-comments"></i> 2 Comments</a>
-                                    </li>
-                                </ul>
-                                <h3><a href="news_detail.html">Winter Wheat Harvest<br>Gathering Momentum</a></h3>
-                                <div class="blog_one_text">
-                                    <p>There are lorem ipsum is simply free many variations of ipsum the majority
-                                        suffered.</p>
-                                </div>
-                                <div class="read_more_btn">
-                                    <a href="#"><i class="fa fa-angle-right"></i>Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-one" style="background-image: url(images/resources/cta_one_bg-1.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="cta_one_content">
-                        <h1>Provide you the Highest Quality products<br>that Meets your Expectation</h1>
-                        <p>Eu quo laoreet propriae, te has, vocent persius eum ea.</p>
-                        <div class="cta_one__button-block">
-                            <a href="#" class="thm-btn cta_one__btn">Discover More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>Bu siz uchun muhim</p>
+            <h3>LABORATORIYA UCHUN TUPROQ NAMUNASINI OLISH</h3>
         </div>
     </section>

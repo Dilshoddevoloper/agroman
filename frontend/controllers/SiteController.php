@@ -24,7 +24,9 @@ class SiteController extends Controller
     public function actionIndex()
     {
         return $this->render('index',[
-            'partners' => Items::find()->where(['entity_id' => Entities::findOne(['slug' => 'partners'])->id])->all()
+            'partners' => Items::find()->where(['entity_id' => Entities::findOne(['slug' => 'partners'])->id])->all(),
+            'useful' => Items::find()->where(['entity_id' => Entities::findOne(['slug' => 'useful'])->id])->all(),
+
         ]);
     }
 

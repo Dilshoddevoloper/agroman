@@ -2,17 +2,17 @@
 <div class="site-header__header-one-wrap">
 
     <div class="topbar-one">
-        <div class="topbar_bg" style="background-image: url(images/shapes/header-bg.png)"></div>
+        <div class="topbar_bg" style="background-image: url(/images/shapes/header-bg.png)"></div>
         <div class="container">
             <div class="topbar-one__left">
-                <a href="mailto:needhelp@tripo.com"><span class="icon-message"></span>needhelp@agrikol.com</a>
-                <a href="tel:666-999-0000"><span class="icon-phone-call"></span>666 888 0000</a>
+                <a href="mailto:needhelp@tripo.com"><span class="icon-message"></span>ruzimurodovdilshod9@gmail.com</a>
+                <a href="tel:666-999-0000"><span class="icon-phone-call"></span>+998913395682</a>
             </div>
-            <div class="topbar-one__middle">
-                <a href="index.html" class="main-nav__logo">
-                    <img src="images/resources/logo.png" class="main-logo" alt="Awesome Image" />
-                </a>
-            </div>
+<!--            <div class="topbar-one__middle">-->
+<!--                <a href="index.html" class="main-nav__logo">-->
+<!--                    <img src="/images/resources/logo.png" class="main-logo" alt="Awesome Image" />-->
+<!--                </a>-->
+<!--            </div>-->
             <div class="topbar-one__right">
                 <div class="topbar-one__social">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -38,76 +38,26 @@
                 <div class="main-nav__main-navigation">
                     <ul class=" main-nav__navigation-box">
                         <li class="dropdown current">
-                            <a href="index.html">Home</a>
-                            <ul>
-                                <li><a href="index.html">Home 01</a></li>
-                                <li><a href="index2.html">Home 02</a></li>
-                                <li><a href="index3.html">Home 03</a></li>
-                                <li><a href="index4.html">Home 04</a></li>
-                                <li><a href="index5.html">Home 05</a></li>
-                                <li class="dropdown"><a href="#">Header Versions</a>
-                                    <ul>
-                                        <li><a href="index.html">Header 01</a></li>
-                                        <li><a href="index2.html">Header 02</a></li>
-                                        <li><a href="index3.html">Header 03</a></li>
-                                        <li><a href="index4.html">Header 04</a></li>
-                                        <li><a href="index5.html">Header 05</a></li>
-                                    </ul><!-- /.sub-menu -->
-                                </li>
-                            </ul><!-- /.sub-menu -->
+                            <a href="/">Asosiy</a>
                         </li>
                         <li class="dropdown">
-                            <a href="service.html">Services</a>
-                            <ul>
-                                <li><a href="service.html">Services</a></li>
-                                <li><a href="service-detail.html">Services Detail</a></li>
-                            </ul><!-- /.sub-menu -->
+                            <a href="/e/labaratory">Labaratoriya</a>
+                        </li>
+                        <li>
+                            <a href="#">Iqlim</a>
                         </li>
                         <li class="dropdown">
-                            <a href="projects.html">Our Projects</a>
+                            <a href="#">Do'kon</a>
                             <ul>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="projects_detail.html">Projects Detail</a></li>
-                            </ul><!-- /.sub-menu -->
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Shop</a>
-                            <ul>
-                                <li><a href="product.html">Products</a></li>
-                                <li><a href="product-detail.html">Product Detail</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                            </ul><!-- /.sub-menu -->
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="why_choose_us.html">Why Choose Us</a></li>
-                                <li><a href="farmers.html">Farmers</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                            </ul><!-- /.sub-menu -->
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">News</a>
-                            <ul>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="news_detail.html">News Details</a></li>
+                                <li><a href="/e/mineralfertilizer">Mineral o'g'itlar do'koni</a></li>
+                                <li><a href="/e/organicfertilizer">Organik o'g'itlar do'koni</a></li>
                             </ul><!-- /.sub-menu -->
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="/e/useful">Foydali</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-
-                <div class="main-nav__right">
-                    <div class="icon_cart_box">
-                        <a href="cart.html">
-                            <span class="icon-shopping-cart"></span>
-                        </a>
-                    </div>
-                </div>
             </div>
         </nav>
     </header>
